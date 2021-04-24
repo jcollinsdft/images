@@ -147,7 +147,7 @@ collections:
 
 defaults:
   - scope:
-      path: "images"
+      path: "store"
     values:
       image: true
         
