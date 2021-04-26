@@ -1,5 +1,5 @@
 # Civil Service LGBT+ Network
 
-## Document store
+## Image store
 
-A site to quickly reference documents for the Civil Service LGBT+ Network.
+A site to quickly reference images for the Civil Service LGBT+ Network.
