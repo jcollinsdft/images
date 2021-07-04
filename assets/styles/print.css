@@ -342,6 +342,14 @@ summary::after { content: ""; clear: both; display: table; }
 
 details > div.container { width: calc(100% - (15px * 2)); margin: 0 0 0 30px; padding: 0; }
 
+p.external-link a:link, p.external-link a:visited { color: #ffffff; text-decoration: none; }
+
+p.external-link a:hover { color: #2f3590; text-decoration: underline !important; cursor: pointer; }
+
+p.external-link a:focus { color: #0B0C0C !important; background: #ffed00; outline: 3px solid #ffed00; }
+
+p.external-link a:active { color: #ffffff !important; background: #e6007e; outline: 3px solid #e6007e; }
+
 #cookie-notice { display: none; }
 
 #cookie-notice-nojs { display: block; }
@@ -696,7 +704,7 @@ main#networks #page-dept-aside h2.page-aside-title, main#format-networks #page-d
 
 main#networks details > details, main#format-networks details > details { margin-left: 30px; }
 
-main#networks details a.button, main#format-networks details a.button { box-sizing: border-box; margin: 0 7.5px 15px 0; }
+main#networks details a.button, main#networks details p.external-link a, p.external-link main#networks details a, main#format-networks details a.button, main#format-networks details p.external-link a, p.external-link main#format-networks details a { box-sizing: border-box; margin: 0 7.5px 15px 0; }
 
 main#join-us, main#update-profile, main[id^="join-us"] { padding: 45px 0; }
 
@@ -917,6 +925,8 @@ main#publication div#page-contents div#page-content > h2:first-of-type, main#for
 main#publication div#page-contents div.footnotes, main#format-publication div#page-contents div.footnotes, main#business-plan div#page-contents div.footnotes, main#format-business-plan div#page-contents div.footnotes, main#manual div#page-contents div.footnotes, main#format-manual div#page-contents div.footnotes { border-top: 2px solid #DEE0E2; padding: 15px 0 0 0; }
 
 main#publication div#page-contents div.footnotes::before, main#format-publication div#page-contents div.footnotes::before, main#business-plan div#page-contents div.footnotes::before, main#format-business-plan div#page-contents div.footnotes::before, main#manual div#page-contents div.footnotes::before, main#format-manual div#page-contents div.footnotes::before { display: inline-block; width: 100%; padding-bottom: 15px; content: "Footnotes"; }
+
+main#publication div#page-contents div.footnotes.margin-top, main#format-publication div#page-contents div.footnotes.margin-top, main#business-plan div#page-contents div.footnotes.margin-top, main#format-business-plan div#page-contents div.footnotes.margin-top, main#manual div#page-contents div.footnotes.margin-top, main#format-manual div#page-contents div.footnotes.margin-top { margin: 45px 0 0 0; }
 
 main#publication details.objective ul, main#publication details.objective ol, main#format-publication details.objective ul, main#format-publication details.objective ol, main#business-plan details.objective ul, main#business-plan details.objective ol, main#format-business-plan details.objective ul, main#format-business-plan details.objective ol, main#manual details.objective ul, main#manual details.objective ol, main#format-manual details.objective ul, main#format-manual details.objective ol { padding: 0; }
 
