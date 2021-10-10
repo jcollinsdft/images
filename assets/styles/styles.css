@@ -1291,11 +1291,11 @@ details.objective p { max-width: 60ch; }
 
 .folder-navigation .radios { padding: 15px; }
 
-.folder-name { position: sticky; position: -webkit-sticky; top: 0; background: #FFE6F4; padding: 15px; }
+.folder-name { z-index: 999999; position: sticky; position: -webkit-sticky; top: 0; background: #FFE6F4; padding: 15px; }
 
 .folder-name .button { margin-bottom: 0; }
 
-.revealed-input { padding: 0 0 0 10px; margin-left: 50px; border-left: 5px solid #e6007e; }
+.revealed-input { padding: 15px; margin-left: 60px; margin-bottom: 25px; background: #FFE6F4; }
 
 .collection--left-nav--navigation, .collection--left-nav--article { padding: 25px 0; margin-bottom: 0 !important; }
 
