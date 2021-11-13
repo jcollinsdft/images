@@ -186,7 +186,7 @@ a:focus { color: #0B0C0C; }
 
 .link--no-visited-state:focus { color: #0B0C0C; }
 
-hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-bottom: 3px solid #BFC1C3; }
+hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-bottom: 3px solid #DEE0E2; }
 
 @media only screen and (min-width: 641px) { hr { margin-top: 30px; } }
 
@@ -198,7 +198,7 @@ pre { display: inline-block; box-sizing: border-box; width: 100%; max-width: 100
 
 @media only screen and (min-width: 641px) { pre { padding: 10px; } }
 
-kbd, code { color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 14px; line-height: 16px; margin-top: 0; margin-bottom: 15px; font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+kbd, code { color: #AD005F; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 14px; line-height: 16px; margin-top: 0; margin-bottom: 15px; font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 @media only screen and (min-width: 641px) { kbd, code { font-size: 16px; line-height: 20px; } }
 
@@ -244,7 +244,7 @@ kbd, code { color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, s
 
 @media only print { .breadcrumbs { font-size: 14pt; line-height: 1.2; } }
 
-@media only screen and (min-width: 641px) { .breadcrumbs { padding-bottom: 10px; border-bottom: 1px solid #BFC1C3; } }
+@media only screen and (min-width: 641px) { .breadcrumbs { padding-bottom: 10px; border-bottom: 1px solid #DEE0E2; } }
 
 @media only print { .breadcrumbs { display: none; } }
 
@@ -342,11 +342,37 @@ kbd, code { color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, s
 
 .button--volunteer { width: 100%; }
 
-.button-group--bordered { border-top: 5px solid #DEE0E2; padding: 25px 0; }
+.button-group--bordered { border-top: 5px solid #DEE0E2; padding: 25px 0 0; }
 
 @media only screen and (min-width: 641px) { .button-group--bordered .button { margin-bottom: 0; } }
 
 @media only screen and (max-width: 641px) { .button-group--bordered .button:last-of-type { margin-bottom: 0; } }
+
+.button--toggle { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; box-sizing: border-box; position: relative; width: 100%; margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 22px; padding: 7px 10px 6px; border: 3px solid transparent; border-radius: 0; color: #ffffff; background-color: #AD005F; box-shadow: 0 2px 0 black; text-align: center; vertical-align: top; cursor: pointer; -webkit-appearance: none; }
+
+@media only screen and (min-width: 641px) { .button--toggle { font-size: 19px; line-height: 25px; } }
+
+@media only print { .button--toggle { font-size: 14pt; line-height: 1.15; } }
+
+@media only screen and (min-width: 641px) { .button--toggle { margin-bottom: 32px; } }
+
+@media only screen and (min-width: 641px) { .button--toggle { width: auto; } }
+
+.button--toggle:link, .button--toggle:visited, .button--toggle:active, .button--toggle:hover { color: #ffffff; text-decoration: none; }
+
+.button--toggle::-moz-focus-inner { padding: 0; border: 0; }
+
+.button--toggle:hover { background-color: #7a0043; }
+
+.button--toggle:active { top: 2px; }
+
+.button--toggle:focus { border-color: #FFED00; outline: 3px solid transparent; box-shadow: inset 0 0 0 1px #FFED00; }
+
+.button--toggle:focus:not(:active):not(:hover) { border-color: #FFED00; color: #0B0C0C; background-color: #FFED00; box-shadow: 0 2px 0 #0B0C0C; }
+
+.button--toggle:before { content: ""; display: block; position: absolute; top: -3px; right: -3px; bottom: -5px; left: -3px; background: transparent; }
+
+.button--toggle:active:before { top: -5px; }
 
 .button-group--clearfix:after { content: ""; display: block; clear: both; }
 
@@ -404,6 +430,28 @@ kbd, code { color: #0B0C0C; font-family: "Helvetica Neue", "Helvetica", Arial, s
 
 @media (hover: none), (pointer: coarse) { .checkboxes--small .checkboxes--item:hover .checkboxes--input:not(:disabled) + .checkboxes--label:before { box-shadow: initial; } .checkboxes--small .checkboxes--item:hover .checkboxes--input:focus + .checkboxes--label:before { box-shadow: 0 0 0 3px #FFED00; } }
 
+.toolbar { position: sticky; z-index: 999999; bottom: 0; top: auto; left: 0; right: 0; padding: 15px 0; background: #fff2f9; }
+
+.toolbar:after { content: ""; display: block; clear: both; }
+
+.dialog { z-index: 9999999; padding: 0; min-width: 50vh; border: 0; box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.dialog::backdrop { background: rgba(0, 0, 0, 0.7); }
+
+.dialog--title { margin: 0; }
+
+.button--close { float: right; }
+
+.button--dialog, .button--toolbar { margin: 0 !important; }
+
+.dialog--header, .dialog--content, .dialog--actions { padding: 15px; margin: 0; }
+
+.dialog--header:after, .dialog--content:after, .dialog--actions:after { content: ""; display: block; clear: both; }
+
+.dialog--content--center { text-align: center; }
+
+.dialog--header, .dialog--actions { background: #fff2f9; }
+
 .date-input { font-size: 0; }
 
 .date-input:after { content: ""; display: block; clear: both; }
@@ -440,7 +488,7 @@ details > summary:active { background: transparent; outline: 3px solid #FFED00; 
 
 details > summary:active:after { color: #0B0C0C; }
 
-details { padding-top: 10px; padding-bottom: 10px; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; color: #0B0C0C; display: block; border-top: 1px solid #BFC1C3; border-bottom: 1px solid #BFC1C3; }
+details { padding-top: 10px; padding-bottom: 10px; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; color: #0B0C0C; display: block; border-top: 1px solid #DEE0E2; border-bottom: 1px solid #DEE0E2; }
 
 @media only screen and (min-width: 641px) { details { padding-top: 10px; } }
 
@@ -834,13 +882,13 @@ table { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-f
 
 @media only screen and (min-width: 641px) { table { margin-bottom: 30px; } }
 
-thead { border-bottom: 2px solid #BFC1C3; }
+thead { border-bottom: 2px solid #DEE0E2; }
 
-tr { border-bottom: 1px solid #BFC1C3; }
+tr { border-bottom: 1px solid #DEE0E2; }
 
 tr:last-child { border-bottom: none; }
 
-tfoot { border-top: 2px solid #BFC1C3; }
+tfoot { border-top: 2px solid #DEE0E2; }
 
 th { padding: 10px 20px 10px 0; text-align: left; vertical-align: top; }
 
@@ -926,7 +974,7 @@ textarea:focus { outline: 3px solid #FFED00; outline-offset: 0; box-shadow: inse
 
 .textarea--error:focus { border-color: #0B0C0C; }
 
-blockquote.warning-text { position: relative; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; color: #0B0C0C; padding: 10px 10px 10px 0; margin-top: 20px; margin-bottom: 20px; clear: both; border: none; background: #fff2f9; }
+blockquote.warning-text { position: relative; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 16px; line-height: 20px; color: #0B0C0C; padding: 10px 20px 10px 0; margin-top: 20px; margin-bottom: 20px; clear: both; border: none; background: #fff2f9; }
 
 @media only screen and (min-width: 641px) { blockquote.warning-text { font-size: 19px; line-height: 25px; } }
 
@@ -1032,9 +1080,19 @@ body { margin: 0; background-color: #ffffff; }
 
 .page--header:after { content: ""; display: block; clear: both; }
 
-@media only print { .page--header { margin: 0; padding: 0 1cm; width: 100%; height: 99%; page-break-after: always; background: #AD005F; } }
+@media only print { .page--header { margin: 0; padding: 0 1cm; width: 100%; height: 99%; page-break-before: always; page-break-after: always; background: #AD005F; box-sizing: border-box; } }
 
-@media only print { .page--caption { padding: 40% 0 0; color: #ffffff; font-weight: bold; } .page--caption:before { position: absolute; display: block; top: 70px; content: "Civil Service \A LGBT+ Network"; white-space: pre; color: #fff2f9 !important; } }
+.page--divider:after { content: ""; display: block; clear: both; }
+
+@media only print { .page--divider { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 36px; line-height: 38px; margin: 0; padding: 7cm 1cm 0; width: 100%; height: 99%; page-break-before: always; page-break-after: always; background: #fff2f9; color: #AD005F; box-sizing: border-box; } }
+
+@media only print { .page--divider { font-size: 36pt; line-height: 1.15; } }
+
+@media only print { .page--divider:before { position: relative; display: block; top: -5cm; font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 24px; line-height: 25px; content: "Civil Service \A LGBT+ Network."; white-space: pre; color: #AD005F !important; } }
+
+@media only print { .page--divider:before { font-size: 24pt; line-height: 1.05; } }
+
+@media only print { .page--caption { padding: 7cm 0 0; color: #ffffff; font-weight: bold; } .page--caption:before { position: absolute; display: block; top: 2cm; content: "Civil Service \A LGBT+ Network."; white-space: pre; color: #fff2f9 !important; } }
 
 .page--heading { margin-top: 15px; margin-bottom: 25px; max-width: 80%; }
 
@@ -1342,15 +1400,15 @@ details.objective p { max-width: 60ch; }
 
 .admin--link-block--guidance { background: #e3f7ff; border-top: 5px solid #009FE3; }
 
-.admin--step-by-step { padding-bottom: 70px; }
+.admin--step-by-step, .admin--select { padding-bottom: 70px; }
 
-.admin--step-by-step:after { content: ""; display: block; clear: both; }
+.admin--step-by-step:after, .admin--select:after { content: ""; display: block; clear: both; }
 
-.admin--step-by-step h2 { border-top: 5px solid #e6007e; padding-top: 25px; }
+.admin--step-by-step h2, .admin--select h2 { border-top: 5px solid #e6007e; padding-top: 25px; }
 
 .fieldset-row { padding-bottom: 25px; margin-bottom: 25px; }
 
-.fieldset--post-github { padding: 25px 0; border-top: 5px solid #DEE0E2; }
+.fieldset--post-github, .fieldset--email-notify { padding: 25px 0 0; border-top: 5px solid #DEE0E2; }
 
 .folder-navigation { background: #ffffff; border: 3px solid #fff2f9; }
 
