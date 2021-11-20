@@ -1,7 +1,7 @@
 ---
 title: "Add images"
 excerpt: "This page allows you to upload an image to the website's image store."
-layout: tools--new-image
+layout: tools/new-image
 permalink: /new
 breadcrumbs-override: true
 breadcrumbs:
