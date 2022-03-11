@@ -337,7 +337,7 @@ kbd, code { color: #AD005F; font-family: "Helvetica Neue", "Helvetica", Arial, s
 
 @media only screen and (min-width: 641px) { .button--event, .button--consultation { width: calc(50% - 15px); margin-bottom: 0; padding: 10px; } .button--event:nth-child(2), .button--consultation:nth-child(2) { float: right; margin-bottom: 0; } }
 
-.button--action { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 18px; line-height: 20px; font-weight: 700; background: #00853E; box-shadow: 0 2px 0 black; }
+.button--action { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 18px; line-height: 20px; background: #00853E; box-shadow: 0 2px 0 black; }
 
 @media only screen and (min-width: 641px) { .button--action { font-size: 27px; line-height: 30px; } }
 
@@ -351,7 +351,7 @@ kbd, code { color: #AD005F; font-family: "Helvetica Neue", "Helvetica", Arial, s
 
 .button--action:after { display: inline-block; position: relative; padding-left: 5px; content: "❯"; }
 
-.button--action--progress { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 18px; line-height: 20px; background: #00853E; box-shadow: 0 2px 0 black; }
+.button--action--progress { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 700; font-size: 18px; line-height: 20px; opacity: 0.5; background: #AD005F; box-shadow: 0 2px 0 black; }
 
 @media only screen and (min-width: 641px) { .button--action--progress { font-size: 27px; line-height: 30px; } }
 
@@ -359,9 +359,9 @@ kbd, code { color: #AD005F; font-family: "Helvetica Neue", "Helvetica", Arial, s
 
 .button--action--progress, .button--action--progress:link, .button--action--progress:visited, .button--action--progress:active, .button--action--progress:hover { color: #ffffff; }
 
-.button--action--progress:hover { background-color: #005226; }
+.button--action--progress:hover { background-color: #7a0043; }
 
-.button--action--progress[disabled]:hover { background-color: #00853E; }
+.button--action--progress[disabled]:hover { background-color: #AD005F; }
 
 .button--feedback { font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; font-size: 14px; line-height: 16px; }
 
