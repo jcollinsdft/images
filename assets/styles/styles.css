@@ -1457,9 +1457,9 @@ details.objective p.milestone-with-details { margin-bottom: 0; }
 
 .volunteer--details--value:last-child { margin-bottom: 0; }
 
-.admin--link-block { padding: 25px 15px 5px 15px; background: #fff6fa; margin-bottom: 25px; border-top: 5px solid #e6007e; }
+.admin--link-block { display: block; padding: 25px 15px 5px 15px; background: #fff6fa; margin-bottom: 25px; border-top: 5px solid #e6007e; }
 
-@media only screen and (min-width: 641px) { .admin--link-block { padding: 25px 25px 0 25px; aspect-ratio: 1.75/1; } }
+@media only screen and (min-width: 641px) { .admin--link-block { padding: 25px 25px 0 25px; } }
 
 .admin--link-block--guidance { background: #e3f7ff; border-top: 5px solid #009FE3; }
 
