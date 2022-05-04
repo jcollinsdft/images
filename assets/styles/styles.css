@@ -1425,6 +1425,10 @@ details.objective p.milestone-with-details { margin-bottom: 0; }
 
 .section--topic .social-links ul li .social-links--handle { float: left; clear: none; padding: 0; margin-bottom: 0; height: 40px; line-height: 40px; vertical-align: middle; }
 
+#topic--section-groups .topic--groups--description { padding: 20px 0 0; border-top: 5px solid #DEE0E2; }
+
+#topic--section-groups .topic--groups--more { margin: 0 0 30px; border-bottom: none; }
+
 .volunteer--link { display: inline-block; }
 
 .volunteer--link:not(:hover):not(:active) { text-decoration: none; }
@@ -1497,7 +1501,7 @@ details.objective p.milestone-with-details { margin-bottom: 0; }
 
 .loop--article-list { border-top: 5px solid #e6007e; padding: 0 0 30px; }
 
-.loop--article-list--item { padding: 20px 0; margin-bottom: 0; border-bottom: 1px solid #BFC1C3; }
+.loop--article-list--item { padding: 20px 0; margin-bottom: 0; border-bottom: 1px solid #DEE0E2; }
 
 .loop--article-list--item:last-child { border-bottom: 0; }
 
